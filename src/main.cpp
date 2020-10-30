@@ -1,6 +1,5 @@
 #include "util.h"
 #include <time.h>
-#include "BaseTool.h"
 
 #define DLT_NFLOG 239
 #define DLT_ETH 1
