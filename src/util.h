@@ -8,7 +8,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#ifdef _WIN32
 #include <pcap-stdinc.h>
+#endif
 #include <pcap.h>
 #include <protocol.h>
 #include <vector>
