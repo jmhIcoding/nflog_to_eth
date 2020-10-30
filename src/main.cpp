@@ -21,6 +21,7 @@
 const char src_mac[6] = SRC_MAC;
 const char dst_mac[6] = DST_MAC;
 
+#ifdef DEBUG
 void display(unsigned char * pkt_data, int len, int nextline=16)
 {
 	for (int i = 0; i < len;)
@@ -34,6 +35,9 @@ void display(unsigned char * pkt_data, int len, int nextline=16)
 	}
 	printf("\n");
 }
+#else
+void display(unsigned char * pkt_data, int len, int nextline = 16){ ; }
+#endif
 
 int nflog2eth(char *pcapname, char *dstfile="out.pcap")
 {
