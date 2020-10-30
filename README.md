@@ -7,6 +7,7 @@ https://github.com/jmhIcoding/nflog_to_eth.git
 # 环境要求：
 
 Windows : 需要安装VC++ 2013 运行库
+
 Linux : 需要安装g++, libpcap-dev
 
 # 项目编译方式
