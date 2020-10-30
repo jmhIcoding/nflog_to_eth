@@ -174,7 +174,8 @@ int main(int argc,char *argv[])
 
 	if (argc != 3)
 	{
-		printf("[usage]:nflog2eth.exe src_pcapname dst_pcapname \n");
+		printf("Convert NFLOG Frame to normal Ethernet Frame.\n");
+		printf("Usage:\n nflog2eth src_pcapname dst_pcapname \n");
 		exit(-1);
 	}
 	
