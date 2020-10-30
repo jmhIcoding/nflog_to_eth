@@ -132,13 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\BaseTool.h" />
-    <ClInclude Include="..\..\src\protocol.h" />
-    <ClInclude Include="..\..\src\util.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\src\main.cpp" />
-    <ClCompile Include="..\..\src\util.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

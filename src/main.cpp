@@ -1,5 +1,18 @@
-#include "util.h"
 #include <time.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#ifdef _WIN32
+#include <pcap-stdinc.h>
+#endif
+
+#include <pcap.h>
+#include <protocol.h>
+#include <vector>
+#include <set>
+#include <map>
+#include <string.h>
 
 #define DLT_NFLOG 239
 #define DLT_ETH 1
@@ -8,6 +21,20 @@
 
 const char src_mac[6] = SRC_MAC;
 const char dst_mac[6] = DST_MAC;
+
+void display(unsigned char * pkt_data, int len, int nextline=16)
+{
+	for (int i = 0; i < len;)
+	{
+		printf("%.2X ", pkt_data[i]);
+		i += 1;
+		if (i % nextline == 0)
+		{
+			printf("\n");
+		}
+	}
+	printf("\n");
+}
 
 int nflog2eth(char *pcapname, char *dstfile="out.pcap")
 {
