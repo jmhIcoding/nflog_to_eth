@@ -175,9 +175,9 @@ int main(int argc,char *argv[])
 	if (argc != 3)
 	{
 		printf("Convert NFLOG Frame to normal Ethernet Frame.\n");
-		printf("\tUsage:\n\t\t nflog2eth src_pcapname dst_pcapname \n"\
-				"\t\t\t src_pcapname: The src nflog pcap to be converted.\n"\
-				"\t\t\t dst_pcapname: The saved destination filename\n\n");
+		printf("Usage:\n\t nflog2eth src_pcapname dst_pcapname \n"\
+				"\t\t src_pcapname: The src nflog pcap to be converted.\n"\
+				"\t\t dst_pcapname: The saved destination filename\n\n");
 		exit(-1);
 	}
 	
