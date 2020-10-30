@@ -8,7 +8,6 @@
 #endif
 
 #include <pcap.h>
-#include <protocol.h>
 #include <vector>
 #include <set>
 #include <map>
