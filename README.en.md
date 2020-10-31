@@ -39,7 +39,7 @@ nflog_to_eth accepts 2 parameters:
 
 
 There is a test file called nflog.pcap in the bin directory: the data packets inside are encapsulated by NFLOG.
-! [Insert image description here](https://img-blog.csdnimg.cn/20201030181404791.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZF_size_F_FF_Y_Z_FT_size
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201030181404791.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ptaDE5OTY=,size_16,color_FFFFFF,t_70#pic_center)
 
 For example, execute the following command:
 
@@ -49,7 +49,9 @@ nflog_to_eth nflog.pcap eth.pcap
 ```
 
 You can see the converted eth.pcap file.
-! [Insert image description here](https://img-blog.csdnimg.cn/20201030181535159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZ_G_FF_FF_YT_FF_size
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201030181535159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ptaDE5OTY=,size_16,color_FFFFFF,t_70#pic_center)
+
 
 # other
 The source MAC address and destination MAC in the current Ethernet frame are hard-coded in the `src/main.cpp` file:
