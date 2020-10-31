@@ -22,7 +22,7 @@ Linux: g++, libpcap-dev need to be installed
 sudo apt-get install libpcap-dev
 git clone https://github.com/jmhIcoding/nflog_to_eth.git
 cd nflog_to_eth
-Make
+make
 ```
 
 You can see a compiled reconstruction file nflog_to_eth.
@@ -44,7 +44,7 @@ There is a test file called nflog.pcap in the bin directory: the data packets in
 For example, execute the following command:
 
 ```shell
-cd warehouse/
+cd bin/
 nflog_to_eth nflog.pcap eth.pcap
 ```
 
